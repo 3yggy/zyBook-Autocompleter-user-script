@@ -8,8 +8,8 @@
 // ==/UserScript==
 //--------------------------------------------------------------------------------------------------------------------
 let SolveDelay        = 512;     //how long to wait between each answer type.
-let AfterTypeWait     = 60;      //how long to wait before clicking check answer after simulating input.
-let AutoFire          = false;   //should SolveAll be called on document load?
+let AfterTypeWait     = 120;      //how long to wait before clicking check answer after simulating input.
+let AutoFire          = true;   //should SolveAll be called on document load?
 //--------------------------------------------------------------------------------------------------------------------
 let ShowAnswer        = "zb-button secondary ember-view show-answer-button"
 let Check             = "zb-button primary raised ember-view check-button"
@@ -191,8 +191,9 @@ function SolveShowAnswers(){
             input.dispatchEvent(new KeyboardEvent('keyup',{'key':'z'}));
             input.dispatchEvent(new Event('blur'));
             (function(){
+                let checkAnswrLocal = checkAnswr;
                 setTimeout(function(){
-                    checkAnswr.click();
+                    checkAnswrLocal.click();
                 }, AfterTypeWait);
             })();
         } 
