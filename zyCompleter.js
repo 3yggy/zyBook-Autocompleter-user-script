@@ -193,7 +193,7 @@ function SolveShowAnswers(){
             (function(){
                 setTimeout(function(){
                     checkAnswr.click();
-                }, AfterTypeWait * i);
+                }, AfterTypeWait);
             })();
         } 
         console.log('Solved Show Answer');
