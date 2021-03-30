@@ -190,7 +190,6 @@ function SolveShowAnswers(){
             input.value=answr;
             input.dispatchEvent(new KeyboardEvent('keyup',{'key':'z'}));
             input.dispatchEvent(new Event('blur'));
-            clickHimSoon(checkAnswr,60);
             (function(){
                 setTimeout(function(){
                     checkAnswr.click();
