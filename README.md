@@ -1,2 +1,7 @@
 # zyBook-Autocompleter
-Why should you go incessantly clicking on all those zyBook buttons?!
+Only supports the elements found in ENGR 1181: Fundamentals of Engineering I:
+  - SolveAnimations
+  - SolveDragDrop
+  - SolveMultipleChoices
+  - SolveShowAnswers
+  - SolveCustom (limitted- optimistically clicks every child)
